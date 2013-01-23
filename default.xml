@@ -42,7 +42,6 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" remote="aosp" revision="refs/tags/android-4.1.1_r1" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" remote="aosp" revision="refs/tags/android-4.1.1_r1" />
   <project path="device/sample" name="device/sample" remote="aosp" revision="refs/tags/android-4.1.1_r1" />
-<!--
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="external/aac" name="platform/external/aac" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.1.2_r1" />

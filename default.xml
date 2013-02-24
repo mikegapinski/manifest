@@ -312,12 +312,12 @@ this avoids merging conflicts from AOSP manifest
 -->
 <!-- Devices and commons used by PolishBlood -->
   <project path="device/semc/haida" name="KangXperiaProject/android_device_semc_haida" remote="kxp" revision="jb" />
-  <project path="device/semc/mogami-common" name="KangXperiaProject/android_device_semc_mogami-common" remote="kxp" revision="jb" />
+  <project path="device/semc/mogami-common" name="mikegapinski/android_device_semc_mogami-common" remote="gh" revision="jb" />
   <project path="device/semc/msm7x30-common" name="KangXperiaProject/android_device_semc_msm7x30-common" remote="kxp" revision="jb" />
 
 <!-- Vendors -->
   <project path="vendor/semc" name="TheMuppets/proprietary_vendor_semc" remote="fxp" revision="jellybean" />
-  <project path="vendor/semc" name="mikegapinski/platform_vendor_PolishBlood" remote="gh" revision="jellybean" />
+  <project path="vendor/PolishBlood" name="mikegapinski/platform_vendor_PolishBlood" remote="gh" revision="jellybean" />
 
 <!--Device kernels -->
   <project path="kernel/semc/msm7x30" name="KangXperiaProject/android_kernel_semc_msm7x30" remote="kxp" revision="jb" />
@@ -335,7 +335,7 @@ this avoids merging conflicts from AOSP manifest
 
 <!-- Frameworks -->
   <project path="frameworks/base" name="mikegapinski/platform_frameworks_base" remote="gh" revision="jellybean" />
-  <project path="frameworks/av" name="mikegapinski/android_frameworks_av" remote="cm" revision="jellybean" />
+  <project path="frameworks/av" name="mikegapinski/platform_frameworks_av" remote="gh" revision="jellybean" />
   <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="cm" revision="jellybean" />
 
 <!-- We use hardware from CM 10 -->

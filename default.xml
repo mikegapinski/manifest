@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
+  <remote name="aosp"
            fetch="https://android.googlesource.com/" />
 
-  <remote  name="aokp"
+  <remote name="aokp"
+           fetch="https://github.com/"
+           review="gerrit.sudoservers.com" />
+
+  <remote name="gh"
            fetch="https://github.com/" />
 
-  <remote  name="gh"
-           fetch="https://github.com/" />
-
-  <remote  name="cm"
-           fetch="https://github.com/" />
-
+  <remote name="cm"
+           fetch="https://github.com/"
+           review="review.cyanogenmod.com" />
 
   <remote name="kxp"
            fetch="https://github.com/"
-           revision="jb" />     
-  
+           revision="jb"
+           review="smartdev.com.pl:8080" />
+
   <remote name="fxp"
            fetch="https://github.com/"
-           revision="jellybean" />
+           revision="jellybean"
+           review="review.cyanogenmod.com" />
 
   <default remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="AOKP/android_build" remote="aokp" revision="jb" >
+  <project path="build" name="KangXperiaProject/android_build" remote="kxp" revision="jb" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-  <project path="bionic" name="AOKP/android_bionic" remote="aokp" revision="jb" />
+  <project path="bionic" name="AOKP/bionic" remote="aokp" revision="jb" />
   <project path="bootable/bootloader/legacy" name="CyanogenMod/android_bootable_bootloader_legacy" remote="cm" revision="jellybean" />
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" remote="cm" revision="jellybean" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="cm" revision="jellybean" />
@@ -159,7 +162,7 @@
   <project path="external/ppp" name="platform/external/ppp" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="external/proguard" name="platform/external/proguard" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="external/protobuf" name="platform/external/protobuf" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-  <project path="external/qemu" name="AOKP/android_external_qemu" remote="aokp" revision="jb" />
+  <project path="external/qemu" name="AOKP/external_qemu" remote="aokp" revision="jb" />
   <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="external/qrngd" name="CyanogenMod/android_external_qrngd" remote="cm" revision="jellybean" />
   <project path="external/quake" name="platform/external/quake" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
@@ -288,9 +291,9 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-  <project path="sdk" name="AOKP/android_sdk" remote="aokp" revision="jb" />
+  <project path="sdk" name="AOKP/sdk" remote="aokp" revision="jb" />
   <project path="system/bluetooth" name="AOKP/system_bluetooth" remote="aokp" revision="jb" />
-  <project path="system/core" name="AOKP/android_system_core" remote="aokp" revision="jb" />
+  <project path="system/core" name="KangXperiaProject/system_core" remote="kxp" revision="jb" />
   <project path="system/extras" name="AOKP/system_extras" remote="aokp" revision="jb" />
   <project path="system/media" name="platform/system/media" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
   <project path="system/netd" name="CyanogenMod/android_system_netd" remote="cm" revision="jellybean" />
@@ -300,21 +303,24 @@
 
 <!--
 ==========================================================================================================================
-KANG XPERIA PROJECT
+PolishBlood PROJECT
 ==========================================================================================================================
-all repositories needed for KangXperiaProject shall remain below this line
-if any repository is replaced, then comment it out above and add new one below
-this avoids merging conflicts from AOKP manifest
+all repositories needed for PolishBlood Project shall remain below this line
+if any repository is replaced, then remove it out above and add new one below
+this avoids merging conflicts from AOSP manifest
 ==========================================================================================================================
 -->
-<!-- Devices and commons used by KXP -->
+<!-- Devices and commons used by PolishBlood -->
   <project path="device/semc/haida" name="KangXperiaProject/android_device_semc_haida" remote="kxp" revision="jb" />
-  <project path="device/semc/coconut" name="KangXperiaProject/android_device_semc_coconut" remote="kxp" revision="jb" />
   <project path="device/semc/mogami-common" name="KangXperiaProject/android_device_semc_mogami-common" remote="kxp" revision="jb" />
   <project path="device/semc/msm7x30-common" name="KangXperiaProject/android_device_semc_msm7x30-common" remote="kxp" revision="jb" />
 
 <!-- Vendors -->
   <project path="vendor/semc" name="TheMuppets/proprietary_vendor_semc" remote="fxp" revision="jellybean" />
+  <project path="vendor/semc" name="mikegapinski/platform_vendor_PolishBlood" remote="gh" revision="jellybean" />
+
+<!--Device kernels -->
+  <project path="kernel/semc/msm7x30" name="KangXperiaProject/android_kernel_semc_msm7x30" remote="kxp" revision="jb" />
 
 <!-- Unofficial packages that we like adding to our ROM ;) -->
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="cm" revision="jellybean" />
@@ -323,15 +329,14 @@ this avoids merging conflicts from AOKP manifest
   <project path="packages/apps/Camera" name="CyanogenMod/android_packages_apps_Camera" remote="cm" revision="jellybean" />
   <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" remote="cm" revision="jellybean" />
 
-<!-- external taken from CM10 -->
+<!-- Supplicant from CM10 -->
   <project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" remote="cm" revision="jellybean" />
   <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" remote="cm" revision="jellybean" />
 
-<!--frameworks -->
-  <project path="frameworks/base" name="platform/frameworks/base" remote="aosp" revision="refs/tags/android-4.1.2_r1" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="cm" revision="jellybean" />
+<!-- Frameworks -->
+  <project path="frameworks/base" name="mikegapinski/platform_frameworks_base" remote="gh" revision="jellybean" />
+  <project path="frameworks/av" name="mikegapinski/android_frameworks_av" remote="cm" revision="jellybean" />
   <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="cm" revision="jellybean" />
-
 
 <!-- We use hardware from CM 10 -->
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="fxp" revision="jellybean"/>
@@ -351,8 +356,5 @@ this avoids merging conflicts from AOKP manifest
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" remote="fxp" revision="jellybean"/>
   <project path="hardware/ti/fmradio" name="CyanogenMod/android_hardware_ti_fmradio" remote="fxp" revision="jellybean" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="cm" revision="jellybean" />
-
-  <project path="kernel/semc/msm7x30" name="PAC-man/semc-kernel-msm7x30" remote="gh" revision="jellybean" />
-  <project path="prebuilt/linux-x86/toolchain/arm-gnueabihf-linaro-4.7" name="PAC-man/android_prebuilt_linux-x86_toolchain_arm-gnueabihf-linaro-4.7" remote="gh" revision="refs/heads/master" />
 
 </manifest>

@@ -1,7 +1,25 @@
+PolishBlood Project platform manifests
+
+##	AOSP 4.1.2 
+##	
+##	Now only for Xperia Neo V
+
 Just do
 
-$ repo init -u https://github.com/PolishBloodProject/manifest.git -b jb-4.2
+$ repo init -u https://github.com/mikegapinski/manifests.git -b 4.1.2
 
 then
 
 $ repo sync
+
+##	AOSP 4.2.2 
+##
+##	For LGE P760 aka Optimus L9
+
+$ repo init -u https://github.com/mikegapinski/manifests.git -b 4.2.2
+
+NOTICE:
+
+If you want to build AOSP PolishBlood for Xperia 2011 lineup go to official PBP github there:
+
+$ https://github.com/PolishBloodProject

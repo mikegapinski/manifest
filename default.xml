@@ -386,6 +386,8 @@
   <!--LGE Stuff -->
   <project path="device/lge/p760" name="mikegapinski/android_device_lge_p760" remote="github" revision="aosp" />
   <project path="kernel/lge/omap4" name="mikegapinski/lge-kernel-omap4" remote="github" revision="cm-10.1" />
+  <project path="vendor/lge" name="mikegapinski/proprietary_vendor_lge" remote="github" revision="aosp" />
+
   
   <!--Vendor -->
   <project path="vendor/PolishBlood" name="PolishBloodProject/platform_vendor_PolishBlood" remote="github" revision="jb-4.2" />

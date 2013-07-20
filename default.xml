@@ -383,7 +383,10 @@
 
   <project path="external/libncurses" name="CyanogenMod/android_external_libncurses" remote="cm" revision="cm-10.1" />
 
-<!--Vendor -->
+  <!--LGE Stuff -->
+  <project path="device/lge/p760" name="mikegapinski/android_device_lge_p760" remote="github" revision="aosp" />
+  
+  <!--Vendor -->
   <project path="vendor/PolishBlood" name="PolishBloodProject/platform_vendor_PolishBlood" remote="github" revision="jb-4.2" />
   
 

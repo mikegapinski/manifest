@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="gh"
+           fetch="https://github.com/" />
+           
+==========================================================================================================================
+PolishBlood PROJECT
+==========================================================================================================================
+all repositories needed for PolishBlood Project shall remain below this line
+if any repository is replaced, then remove it out above and add new one below
+this avoids merging conflicts from AOSP manifest
+==========================================================================================================================
+-->
+
+<!-- manifest -->
+  <project path="manifest" name="mikegapinski/manifest" remote="gh" revision="5.0" />
+
+<!-- Devices and commons used by PolishBlood -->
+  <project path="device/semc/mogami-common" name="KangXperiaProject/android_device_semc_mogami-common" remote="gh" revision="jb" />
+  <project path="device/semc/msm7x30-common" name="KangXperiaProject/android_device_semc_msm7x30-common" remote="gh" revision="jb" />
+  <project path="device/semc/haida" name="KangXperiaProject/android_device_semc_haida" remote="gh" revision="jb" />
+
+<!-- Vendors -->
+  <project path="vendor/semc" name="TheMuppets/proprietary_vendor_semc" remote="gh" revision="jellybean" />
+  <project path="vendor/PolishBlood" name="PolishBloodProject/platform_vendor_PolishBlood" remote="gh" revision="jb" />
+
+<!--Device kernels -->
+
+
+<!-- Supplicant from CM12 -->
+  <project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" remote="gh" revision="jellybean" />
+  <project path="external/wpa_supplicant_8_ti" name="CyanogenMod/android_external_wpa_supplicant_8_ti" remote="gh" revision="cm-12.0" />
+
+<!-- Frameworks #todo -->
+
+<!-- We use hardware QCOM from Legacy Xperia -->
+  <project name="LegacyXperia/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm7x30" remote="gh" revision="cm-12.0-caf-7x30" />
+  <project name="LegacyXperia/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x30" remote="gh" revision="cm-12.0-caf-legacy" />
+  <project name="LegacyXperia/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="gh" revision="cm-12.0-caf-legacy" />
+
+  <!-- CyanogenMod projects -->
+  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="gh" revision="cm-12.0" />
+  
+  </manifest>

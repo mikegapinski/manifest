@@ -56,5 +56,7 @@ this avoids merging conflicts from AOSP manifest
   <project path="hardware/qcom/media-caf/msm8916" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-12.0-caf-8916" remote="github" /> 
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="github" revision="cm-12.0" groups="qcom_wlan" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-12.0" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="cm-12.0" />
+
 
   </manifest>

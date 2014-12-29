@@ -58,8 +58,14 @@ this avoids merging conflicts from AOSP manifest
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-12.0" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="cm-12.0" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="github" revision="cm-12.0" />
-  <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.0" />
-
+  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" remote="github" revision="cm-12.0" />
+  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="github" revision="cm-12.0" />
+  <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" remote="github" revision="cm-12.0" />
+  <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" remote="github" revision="cm-12.0" />
+  <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" remote="github" revision="cm-12.0" />
+  <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" remote="github" revision="cm-12.0" />
+  <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" remote="github" revision="cm-12.0" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" remote="github" revision="cm-12.0" />
 
 
 

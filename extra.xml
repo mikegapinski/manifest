@@ -39,7 +39,9 @@ this avoids merging conflicts from AOSP manifest
   <project name="LegacyXperia/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x30" remote="github" revision="cm-12.0-caf-legacy" />
   <project name="LegacyXperia/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="github" revision="cm-12.0-caf-legacy" />
 
-  <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="github" revision="cm-12.0" /> 
-  
+  <project name="mikegapinski/android_hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="cm-12.0" /> 
+
+
+
   </manifest>

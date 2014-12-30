@@ -74,7 +74,9 @@ this avoids merging conflicts from AOSP manifest
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs"  remote="github" revision="cm-12.0"/>
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" remote="github" revision="cm-12.0" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" remote="github" revision="cm-12.0" />
-    <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk"  remote="github" revision="cm-12.0"/>
+  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk"  remote="github" revision="cm-12.0"/>
+  <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="cm-12.0" />
+
 
 
 

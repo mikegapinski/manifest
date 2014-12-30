@@ -80,6 +80,8 @@ this avoids merging conflicts from AOSP manifest
       <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.0" />
         <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos" groups="pdk-cw-fs" remote="github" revision="cm-12.0" />
           <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="github" revision="cm-12.0" />
+            <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.0" />
+
 
 
 

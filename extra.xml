@@ -68,6 +68,6 @@ this avoids merging conflicts from AOSP manifest
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" remote="github" revision="cm-12.0" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" remote="github" revision="cm-12.0" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" groups="pdk" remote="github" revision="cm-12.0" />
-  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="github" revision="master" />
 
   </manifest>

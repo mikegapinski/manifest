@@ -76,11 +76,13 @@ this avoids merging conflicts from AOSP manifest
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" remote="github" revision="cm-12.0" />
   <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk"  remote="github" revision="cm-12.0"/>
   <project path="external/fuse" name="CyanogenMod/android_external_fuse" remote="github" revision="cm-12.0" />
-    <project path="external/skia" name="CyanogenMod/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="cm-12.0" />
-      <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.0" />
-        <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos" groups="pdk-cw-fs" remote="github" revision="cm-12.0" />
-          <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="github" revision="cm-12.0" />
-            <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.0" />
+  <project path="external/skia" name="CyanogenMod/android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="cm-12.0" />
+  <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-12.0" />
+  <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos" groups="pdk-cw-fs" remote="github" revision="cm-12.0" />
+  <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="github" revision="cm-12.0" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.0" />
+  <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" remote="github" revision="cm-12.0" />
+
 
 
 

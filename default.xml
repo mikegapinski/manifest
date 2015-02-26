@@ -574,6 +574,8 @@
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" remote="aosp" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" remote="aosp" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" remote="aosp" />
+  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" remote="aosp" />
+
     <!-- extras-->
   <include name="extra.xml" />
 </manifest>

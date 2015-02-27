@@ -12,6 +12,12 @@
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
+           
+  <remote  name="caf"
+           sync-c="true"
+	         fetch="git://codeaurora.org/" 
+	         review="codeaurora.org"/>
+	         revision="LA.BF.1.1.1_rb1.12"
 
   <default revision="refs/heads/cm-12.0"
            remote="github"
@@ -464,116 +470,106 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
-  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" remote="aosp" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs" remote="aosp" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" remote="aosp" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" remote="aosp" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" remote="aosp" />
-  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" remote="aosp" />
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" remote="aosp" />
-  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp" />
-  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" remote="aosp" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" remote="aosp" />
-  <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" remote="aosp" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" remote="aosp" />
-  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" remote="aosp" />
-  <project path="packages/apps/Email" name="platform/packages/apps/Email" remote="aosp" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" remote="aosp" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" remote="aosp" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="aosp" />
-  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" remote="aosp" />
-  <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" remote="aosp" />
-  <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" remote="aosp" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" remote="aosp" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" remote="aosp" />
-  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" remote="aosp" />
-  <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" remote="aosp" />
-  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" remote="aosp" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" remote="aosp" />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" remote="aosp" />
-  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" remote="aosp" />
-  <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" remote="aosp" />
-  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" remote="aosp" />
-  <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" remote="aosp" />
-  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" remote="aosp" />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" remote="aosp" />
-  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" remote="aosp" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="aosp" />
-  <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" remote="aosp" />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" remote="aosp" />
-  <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" remote="aosp" />
-  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" remote="aosp" />
-  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" remote="aosp" />
-  <project path="packages/apps/Tag" name="platform/packages/apps/Tag" remote="aosp" />
-  <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" remote="aosp" />
-  <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" remote="aosp" />
-  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" remote="aosp" />
-  <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" />
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" remote="aosp" />
-  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" remote="aosp" />
-  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" remote="aosp" />
-  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" remote="aosp" />
-  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs" remote="aosp" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs" remote="aosp" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs" remote="aosp" />
-  <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" remote="aosp" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" remote="aosp" />
-  <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" remote="aosp" />
-  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" remote="aosp" />
-  <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" remote="aosp" />
-  <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" remote="aosp" />
-  <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" remote="aosp" />
-  <project path="packages/services/Mms" name="platform/packages/services/Mms" remote="aosp" />
-  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" remote="aosp" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" remote="aosp" />
-  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" remote="aosp" />
-  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" remote="aosp" />
-  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" remote="aosp" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" remote="aosp" />
-  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="aosp" />
-  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="aosp" />
-  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" remote="aosp" />
-  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" remote="aosp" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="aosp" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
-  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
-  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
-  <project path="frameworks/ex" name="platform/frameworks/ex" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/mff" name="platform/frameworks/mff" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="aosp" />
-  <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" remote="aosp" />
-  <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" remote="aosp" />
-  <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" remote="aosp" />
-  <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" remote="aosp" />
-  <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" remote="aosp" />
-  <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/testing" name="platform/frameworks/testing" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" remote="aosp" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" remote="aosp" />
-
+  <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" remote="caf" />
+  <project name="platform/packages/apps/Browser" path="packages/apps/Browser" remote="caf" />
+  <project name="platform/packages/apps/Calculator" path="packages/apps/Calculator" remote="caf" />
+  <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" remote="caf" />
+  <project name="platform/packages/apps/Camera" path="packages/apps/Camera" remote="caf" />
+  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" remote="caf" />
+  <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" remote="caf" />
+  <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" remote="caf" />
+  <project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon" remote="caf" />
+  <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" remote="caf" />
+  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer" remote="caf" />
+  <project name="platform/packages/apps/Email" path="packages/apps/Email" remote="caf" />
+  <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" remote="caf" />
+  <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery" remote="caf" />
+  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" remote="caf" />
+  <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" remote="caf" />
+  <project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI" remote="caf" />
+  <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" remote="caf" />
+  <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" remote="caf" />
+  <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" remote="caf" />
+  <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" remote="caf" />
+  <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" remote="caf" />
+  <project name="platform/packages/apps/Mms" path="packages/apps/Mms" remote="caf" />
+  <project name="platform/packages/apps/Music" path="packages/apps/Music" remote="caf" />
+  <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" remote="caf" />
+  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" remote="caf" />
+  <project name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" remote="caf" />
+  <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" remote="caf" />
+  <project name="platform/packages/apps/Phone" path="packages/apps/Phone" remote="caf" />
+  <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" remote="caf" />
+  <project name="platform/packages/apps/Protips" path="packages/apps/Protips" remote="caf" />
+  <project name="platform/packages/apps/Provision" path="packages/apps/Provision" remote="caf" />
+  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" remote="caf" />
+  <project name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" remote="caf" />
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="caf" />
+  <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" remote="caf" />
+  <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" remote="caf" />
+  <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" remote="caf" />
+  <project name="platform/packages/apps/Stk" path="packages/apps/Stk" remote="caf" />
+  <project name="platform/packages/apps/Tag" path="packages/apps/Tag" remote="caf" />
+  <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" remote="caf" />
+  <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" remote="caf" />
+  <project name="platform/packages/apps/VoiceDialer" path="packages/apps/VoiceDialer" remote="caf" />
+  <project name="platform/packages/experimental" path="packages/experimental" remote="caf" />
+  <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" remote="caf" />
+  <project name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" remote="caf" />
+  <project name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" remote="caf" />
+  <project name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" remote="caf" />
+  <project name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" remote="caf" />
+  <project name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" remote="caf" />
+  <project name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" remote="caf" />
+  <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" remote="caf" />
+  <project name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" remote="caf" />
+  <project name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" remote="caf" />
+  <project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" remote="caf" />
+  <project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" remote="caf" />
+  <project name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" remote="caf" />
+  <project name="platform/packages/services/Mms" path="packages/services/Mms" remote="caf" />
+  <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" remote="caf" />
+  <project name="platform/packages/services/Telephony" path="packages/services/Telephony" remote="caf" />
+  <project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic" remote="caf" />
+  <project name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4" remote="caf" />
+  <project name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral" remote="caf" />
+  <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" remote="caf" />
+  <project name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke" remote="caf" />
+  <project name="platform/packages/wallpapers/MusicVisualization" path="packages/wallpapers/MusicVisualization" remote="caf" />
+  <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField" remote="caf" />
+  <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam" remote="caf" />
+  <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" remote="caf" />
+  <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" remote="caf" />
+  <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/ex" path="frameworks/ex" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/mff" path="frameworks/mff" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/minikin" path="frameworks/minikin" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/ml" path="frameworks/ml" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/multidex" path="frameworks/multidex" remote="caf" />
+  <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/carddav" path="frameworks/opt/carddav" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" remote="caf" />
+  <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" remote="caf" />
+  <project groups="frameworks_ims,pdk-cw-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" remote="caf" />
+  <project groups="pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/opt/widget" path="frameworks/opt/widget" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/support" path="frameworks/support" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/testing" path="frameworks/testing" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley" remote="caf" />
+  <project groups="pdk-cw-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" remote="caf" />
+  <project groups="pdk" name="platform/external/bluetooth/bluedroid" path="external/bluetooth/bluedroid" remote="caf" />
     <!-- extras-->
   <include name="extra.xml" />
 </manifest>

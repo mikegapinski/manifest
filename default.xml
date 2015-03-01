@@ -17,6 +17,12 @@
 	   fetch="git://codeaurora.org/" 
 	   review="codeaurora.org"
 	   revision="LA.BF.1.1.1_rb1.12" />
+	   
+  	<remote  name="par"
+            fetch="git://github.com/aosparadox/"
+            sync-c="true"
+            sync-j="4"
+            revision="lollipop" />
 
   <default revision="refs/heads/cm-12.0"
            remote="github"
@@ -542,28 +548,28 @@
   <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"  remote="caf" />
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"  remote="caf" />
     
-  <project path="system/core" name="android_system_core" groups="pdk" remote="github" revision="lollipop" />
-  <project path="system/extras" name="android_system_extras" groups="pdk" remote="github" revision="lollipop" />
-  <project path="system/media" name="android_system_media" groups="pdk" remote="github" revision="lollipop" />
-  <project path="system/netd" name="android_system_netd" groups="pdk" remote="github" revision="lollipop" />
-  <project path="system/qcom" name="android_system_qcom" remote="github" revision="lollipop" groups="pdk" />
-  <project path="system/security" name="android_system_security" remote="github" revision="lollipop" groups="pdk" />
-  <project path="system/vold" name="android_system_vold" remote="github" revision="lollipop" groups="pdk" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="par" revision="lollipop" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="par" revision="lollipop" />
+  <project path="system/media" name="android_system_media" groups="pdk" remote="par" revision="lollipop" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="par" revision="lollipop" />
+  <project path="system/qcom" name="android_system_qcom" remote="par" revision="lollipop" groups="pdk" />
+  <project path="system/security" name="android_system_security" remote="par" revision="lollipop" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" remote="par" revision="lollipop" groups="pdk" />
   
-  <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="lollipop" groups="pdk" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="lollipop" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="lollipop" groups="pdk" />
-  <project path="frameworks/opt/mms" name="android_frameworks_opt_mms" remote="github" revision="lollipop" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="github" revision="lollipop" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="github" revision="lollipop" groups="pdk" />
-  <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" remote="github" revision="lollipop" groups="pdk-cw-fs" />
-  <project path="frameworks/rs" name="android_frameworks_rs" remote="github" revision="lollipop" groups="pdk" />
-  <project path="frameworks/webview" name="android_frameworks_webview" remote="github" revision="lollipop" groups="pdk" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="par" revision="lollipop" groups="pdk" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="par" revision="lollipop" groups="pdk" />
+  <project path="frameworks/opt/mms" name="android_frameworks_opt_mms" remote="par" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="par" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="par" revision="lollipop" groups="pdk" />
+  <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" remote="par" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/rs" name="android_frameworks_rs" remote="par" revision="lollipop" groups="pdk" />
+  <project path="frameworks/webview" name="android_frameworks_webview" remote="par" revision="lollipop" groups="pdk" />
   
-  <project groups="qcom,default" name="android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="lollipop_bacon"/>
-  <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="lollipop_bacon"/>
-  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="lollipop"/>
-  <project path="build" name="android_build" remote="github" revision="test" groups="pdk,tradefed" >
+  <project groups="qcom,default" name="android_hardware_qcom_media" path="hardware/qcom/media" remote="par" revision="lollipop_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="lollipop_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="lollipop"/>
+  <project path="build" name="android_build" remote="par" revision="test" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
     

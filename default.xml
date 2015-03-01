@@ -7,8 +7,7 @@
            revision="refs/tags/android-5.0.2_r1" />
 
   <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
+           fetch=".." />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -23,10 +22,6 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
-
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
 
   <project path="android" name="CyanogenMod/android" />
 
@@ -536,8 +531,6 @@
   <project name="platform/packages/wallpapers/MusicVisualization" path="packages/wallpapers/MusicVisualization" remote="caf" />
   <project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField" remote="caf" />
   <project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam" remote="caf" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="caf" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="caf" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="caf" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="caf" />
@@ -546,7 +539,6 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" remote="caf" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="caf" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" remote="caf" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" remote="caf" />
@@ -556,26 +548,48 @@
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" remote="caf" />
-  <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" remote="caf" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" remote="caf" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" remote="caf" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" remote="caf" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" remote="caf" />
-  <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" remote="caf" />
-  <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" remote="caf" />
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/testing" name="platform/frameworks/testing" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" remote="caf" />
-  <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" remote="caf" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" remote="caf" />
   <project groups="pdk" name="platform/external/bluetooth/bluedroid" path="external/bluetooth/bluedroid" remote="caf" />
-    <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"  remote="caf" />
+  <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"  remote="caf" />
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"  remote="caf" />
+    
+  <project path="system/core" name="android_system_core" groups="pdk" remote="github" revision="lollipop" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="github" revision="lollipop" />
+  <project path="system/media" name="android_system_media" groups="pdk" remote="github" revision="lollipop" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="github" revision="lollipop" />
+  <project path="system/qcom" name="android_system_qcom" remote="github" revision="lollipop" groups="pdk" />
+  <project path="system/security" name="android_system_security" remote="github" revision="lollipop" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" remote="github" revision="lollipop" groups="pdk" />
+  
+  <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="lollipop" groups="pdk" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="lollipop" groups="pdk" />
+  <project path="frameworks/opt/mms" name="android_frameworks_opt_mms" remote="github" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="github" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="github" revision="lollipop" groups="pdk" />
+  <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" remote="github" revision="lollipop" groups="pdk-cw-fs" />
+  <project path="frameworks/rs" name="android_frameworks_rs" remote="github" revision="lollipop" groups="pdk" />
+  <project path="frameworks/webview" name="android_frameworks_webview" remote="github" revision="lollipop" groups="pdk" />
+  
+  <project groups="qcom,default" name="android_hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="lollipop_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="lollipop_bacon"/>
+  <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="lollipop"/>
+  <project path="build" name="android_build" remote="github" revision="test" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+    
+    
     <!-- extras-->
   <include name="extra.xml" />
 </manifest>

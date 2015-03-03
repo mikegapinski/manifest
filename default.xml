@@ -574,5 +574,5 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" remote="aosp" />
 
     <!-- extras-->
-  <include name="extra.xml" />
+  <include name="legacyxperia.xml" />
 </manifest>

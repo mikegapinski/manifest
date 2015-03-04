@@ -38,4 +38,7 @@
   <!-- AOSP projects-->
   <project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
   <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
+
+  <project name="LegacyXperiaAOSP/android_vendor_lx" path="vendor/lx" remote="github" revision="lollipop" />
+  <copyfile dest="extras/updates.sh" src="updates.sh"/>
 </manifest>

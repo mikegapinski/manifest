@@ -6,6 +6,7 @@
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" />
   <project path="external/exfat" name="CyanogenMod/android_external_exfat" />                            
   <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos" groups="pdk-cw-fs" />
+  <project path="external/pigz" name="CyanogenMod/android_external_pigz" />
   <project path="external/fuse" name="CyanogenMod/android_external_fuse" />
   <project path="external/libtar" name="CyanogenMod/android_external_libtar" />
   <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" />

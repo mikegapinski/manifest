@@ -1,0 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="build" name="mikegapinski/android_build" groups="pdk,tradefed" revision="lollipop" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="frameworks/av" name="LegacyXperiaAOSP/android_frameworks_av" groups="pdk" revision="lollipop"/>
+  <project path="frameworks/native" name="LegacyXperiaAOSP/android_frameworks_native" groups="pdk" revision="lollipop"/>
+  <project name="LegacyXperiaAOSP/android_vendor_LegacyXperiaAOSP" path="vendor/LegacyXperiaAOSP" remote="github" revision="lollipop" />
+  <project name="LegacyXperiaAOSP/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="github" revision="lollipop" />
+  <project name="LegacyXperiaAOSP/android_device_semc_mogami-common" path="device/semc/mogami-common" remote="github" revision="lollipop" />
+  <project name="LegacyXperiaAOSP/android_device_semc_haida" path="device/semc/haida" remote="github" revision="lollipop" />
+</manifest>

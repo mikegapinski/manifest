@@ -4,7 +4,8 @@
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" />
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" />
-  <project path="external/exfat" name="CyanogenMod/android_external_exfat" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" />                            
+  <project path="external/fsck_msdos" name="CyanogenMod/android_external_fsck_msdos" groups="pdk-cw-fs" />
   <project path="external/fuse" name="CyanogenMod/android_external_fuse" />
   <project path="external/libtar" name="CyanogenMod/android_external_libtar" />
   <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" />

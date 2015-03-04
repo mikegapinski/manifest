@@ -40,5 +40,5 @@
   <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
 
   <project name="LegacyXperiaAOSP/android_vendor_lx" path="vendor/lx" remote="github" revision="lollipop" />
-  <copyfile dest="extras/updates.sh" src="updates.sh"/>
+  <copyfile dest="updates.sh" src="extras/updates.sh"/>
 </manifest>

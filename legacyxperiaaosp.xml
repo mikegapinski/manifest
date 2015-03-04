@@ -3,6 +3,7 @@
   <project path="build" name="mikegapinski/android_build" groups="pdk,tradefed" revision="lollipop" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="external/busybox" name="LegacyXperiaAOSP/android_external_busybox" revision="lollipop"/>
   <project path="frameworks/av" name="LegacyXperiaAOSP/android_frameworks_av" groups="pdk" revision="lollipop"/>
   <project path="frameworks/native" name="LegacyXperiaAOSP/android_frameworks_native" groups="pdk" revision="lollipop"/>
   <project name="LegacyXperiaAOSP/android_vendor_LegacyXperiaAOSP" path="vendor/LegacyXperiaAOSP" remote="github" revision="lollipop" />

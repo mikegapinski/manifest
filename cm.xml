@@ -11,6 +11,7 @@
   <project path="external/pigz" name="CyanogenMod/android_external_pigz" />
   <project path="external/fuse" name="CyanogenMod/android_external_fuse" />
   <project path="external/libtar" name="CyanogenMod/android_external_libtar" />
+  <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="hardware/akm" name="CyanogenMod/android_hardware_akm" groups="pdk" />
   <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="broadcom_wlan" />

@@ -12,7 +12,4 @@
   <project name="LegacyXperiaAOSP/android_packages_apps_Dialer" path="packages/apps/Dialer" revision="lollipop"/>
   <project name="LegacyXperiaAOSP/android_packages_apps_InCallUI" path="packages/apps/InCallUI" revision="lollipop"/>
   <project name="LegacyXperiaAOSP/android_vendor_LegacyXperiaAOSP" path="vendor/LegacyXperiaAOSP" remote="github" revision="lollipop" />
-  <project name="LegacyXperiaAOSP/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="github" revision="lollipop" />
-  <project name="LegacyXperiaAOSP/android_device_semc_mogami-common" path="device/semc/mogami-common" remote="github" revision="lollipop" />
-  <project name="LegacyXperiaAOSP/android_device_semc_haida" path="device/semc/haida" remote="github" revision="lollipop" />
 </manifest>

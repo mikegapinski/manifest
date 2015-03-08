@@ -298,7 +298,6 @@
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" remote="aosp" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" remote="aosp" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" remote="aosp" />
-  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" remote="aosp" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" remote="aosp" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" remote="aosp" />
